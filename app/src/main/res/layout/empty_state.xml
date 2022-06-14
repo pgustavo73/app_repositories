@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F1EAEA"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_owner"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/user"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        tools:text="Paulo Gustavo"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/iv_owner"
+        app:layout_constraintTop_toTopOf="@+id/iv_owner" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        tools:text="pgustavo73"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/user"
+        app:layout_constraintTop_toBottomOf="@+id/user" />
+
+    <TextView
+        android:id="@+id/tv_bio"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="5dp"
+        android:textSize="20sp"
+        tools:text="I am a lover of android development especially the Kotlin language."
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/iv_owner"
+        app:layout_constraintTop_toBottomOf="@+id/iv_owner" />
+
+    <TextView
+        android:id="@+id/tv_followers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:textSize="20sp"
+        tools:text="followers: 1 - following: 16"
+        app:layout_constraintTop_toBottomOf="@+id/tv_bio"
+        app:layout_constraintStart_toStartOf="@+id/tv_bio" />
+
+    <ImageView
+        android:id="@+id/iv_place"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="@+id/tv_bio"
+        app:layout_constraintTop_toBottomOf="@+id/tv_followers"
+        app:srcCompat="@drawable/ic_place"
+        tools:ignore="contentDescription"/>
+
+    <TextView
+        android:id="@+id/tv_place"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:textSize="20sp"
+        tools:text="Recife - Brazil"
+        app:layout_constraintTop_toBottomOf="@+id/tv_followers"
+        app:layout_constraintStart_toStartOf="@+id/tv_bio" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

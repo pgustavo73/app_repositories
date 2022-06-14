@@ -15,4 +15,6 @@ class RepoRepositoryImpl(private val service: GitHubService) : RepoRepository {
             throw RemoteException(ex.message ?: "Não foi possivel fazer a busca no momento!")
         }
     }
+
+    suspend fun getUser(user: String) = service.getUser(user)
 }
